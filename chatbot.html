@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amantes de los Barcos</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Un color de fondo por defecto */
+        }
+
+        .hero {
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero" style="background-image: url('tu-foto-de-fondo.jpg');">
+        <h1>Bienvenidos al Mundo de los Barcos</h1>
+        <p>Descubre la belleza y la aventura de la navegación.</p>
+    </div>
+
+    <div class="container">
+        <h2>Tipos de Barcos</h2>
+        <ul>
+            <li>Velero: Impulsado por el viento mediante velas.</li>
+            <li>Yate: Embarcación de recreo, a menudo lujosa.</li>
+            <li>Lancha Motora: Barco pequeño propulsado por un motor.</li>
+            <li>Catamarán: Embarcación con dos cascos paralelos.</li>
+            <li>Transatlántico: Barco de pasajeros de gran tamaño para travesías oceánicas.</li>
+        </ul>
+        <script>
+            window.watsonAssistantChatOptions = {
+              integrationID: "5a0b28d4-2b14-4dd4-979c-d63567867752", // The ID of this integration.
+              region: "eu-de", // The region your integration is hosted in.
+              serviceInstanceID: "5070ac0d-1d7f-41ca-9a7d-174ee3cfef57", // The ID of your service instance.
+              onLoad: async (instance) => { await instance.render(); }
+            };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+              document.head.appendChild(t);
+            });
+          </script>
+
+        <h2>La Pasión por Navegar</h2>
+        <p>Navegar es una actividad que combina la emoción de la aventura con la tranquilidad del mar. Ya sea a vela o a motor, la sensación de libertad y la conexión con la naturaleza son incomparables.</p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Amantes de los Barcos</p>
+    </div>
+
+</body>
+</html>
